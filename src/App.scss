@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -14,10 +13,10 @@
     filter: drop-shadow(0 0 2em #646cffaa);
   }
 
-}
+  .react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -35,10 +34,3 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
