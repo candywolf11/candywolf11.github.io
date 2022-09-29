@@ -1,4 +1,36 @@
 main {
   display: flex;
   flex-direction: column;
+
+  margin-top: 40px;
+
+  .main--row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main--image-wrapper {
+    border-radius: 50%;
+    border: 1px white solid;
+    display: flex;
+    flex: auto 0 200px;
+    height: 200px;
+    overflow: hidden;
+
+    .main--image {
+      opacity: 0.6;
+    }
+  }
+
+  .main-cards {
+    display: flex;
+
+    // TODO: should be row on small screens
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 40px;
+  }
 }

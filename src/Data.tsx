@@ -9,13 +9,19 @@ export const headerProps: HeaderProps = {
 export const cards: CardProps[] = [
   {
     title: 'Svedmasszazs',
-    image: '/vite.svg',
+    image: '/massage/massage-sved.jpg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
   {
     title: 'Relaxacios Masszazs',
-    image: '/vite.svg',
+    image: '/massage/massage-relax.jpg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+  {
+    title: 'Talpmasszazs',
+    image: '/massage/massage-talp.jpg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
