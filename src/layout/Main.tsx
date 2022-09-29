@@ -2,14 +2,15 @@ import { Card, CardProps } from '../components/Card';
 import './Main.scss';
 
 export interface MainProps {
+  mainTitle: string,
   cards: CardProps[];
 }
 
-export const Main = ({ cards: cardList }: MainProps) => {
+export const Main = ({ cards: cardList, mainTitle }: MainProps) => {
   const cards = cardList.map(card => <Card {...card} />);
   return (
     <main>
-      <h1 className="main--row">Masszázs és Ajaktöltés</h1>
+      <h1 className="main--row">{mainTitle}</h1>
       <div className="main--row">
         <div className="main--image-wrapper">
           <img

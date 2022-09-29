@@ -1,5 +1,5 @@
 import './App.scss';
-import { cards, headerProps } from './Data';
+import { cards, headerProps, mainTitle } from './Data';
 import { Footer } from './layout/Footer';
 import { Header } from './layout/Header';
 import { Main, MainProps } from './layout/Main';
@@ -7,6 +7,7 @@ import { Main, MainProps } from './layout/Main';
 export const App = () => {
   const mainProps: MainProps = {
     cards,
+    mainTitle
   };
 
   return (

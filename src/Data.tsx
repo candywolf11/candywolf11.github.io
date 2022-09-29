@@ -6,6 +6,8 @@ export const headerProps: HeaderProps = {
   subtitle: 'Szépség és egészség',
 };
 
+export const mainTitle = 'Masszázs és Ajaktöltés';
+
 export const cards: CardProps[] = [
   {
     title: 'Svédmasszázs',
