@@ -1,4 +1,5 @@
-import './footer.scss';
+import '../sass/main.scss';
+
 export const Footer = () => (
   <footer>
     <div className="footer--row">

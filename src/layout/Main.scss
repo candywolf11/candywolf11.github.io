@@ -1,3 +1,5 @@
+@import '../sass/main.scss';
+
 main {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: $gap;
   }
 
   .main--image-wrapper {
@@ -29,7 +31,7 @@ main {
 
     // TODO: should be row on small screens
     flex-direction: column;
-    gap: 20px;
+    gap: $gap;
 
     margin-top: 40px;
   }

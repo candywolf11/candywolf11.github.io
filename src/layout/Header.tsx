@@ -1,4 +1,4 @@
-import './header.scss';
+import '../sass/main.scss';
 
 export interface HeaderProps {
   title: string;

@@ -1,4 +1,4 @@
-import './card.scss';
+import '../sass/main.scss';
 
 export interface CardProps {
   image: string;
