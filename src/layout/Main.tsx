@@ -7,7 +7,7 @@ export interface MainProps {
 }
 
 export const Main = ({ cards: cardList, mainTitle }: MainProps) => {
-  const cards = cardList.map(card => <Card {...card} />);
+  const cards = cardList.map((card, index) => <Card {...card} key={index} />);
   return (
     <main>
       <h1 className="main--row">{mainTitle}</h1>
