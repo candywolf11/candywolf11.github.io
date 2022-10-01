@@ -1,5 +1,5 @@
-import './App.scss';
-import { cards, headerProps, mainTitle } from './Data';
+import './app.scss';
+import { cards, headerProps, mainTitle } from './data/Data';
 import { Footer } from './layout/Footer';
 import { Header } from './layout/Header';
 import { Main, MainProps } from './layout/Main';

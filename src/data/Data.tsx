@@ -1,5 +1,5 @@
-import { CardProps } from './components/Card';
-import { HeaderProps } from './layout/Header';
+import { CardProps } from '../components/Card';
+import { HeaderProps } from '../layout/Header';
 
 export const headerProps: HeaderProps = {
   title: 'Relax Time',

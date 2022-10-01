@@ -1,5 +1,5 @@
 import { Card, CardProps } from '../components/Card';
-import './Main.scss';
+import './main.scss';
 
 export interface MainProps {
   mainTitle: string,
