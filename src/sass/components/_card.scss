@@ -30,4 +30,14 @@
       margin-left: 10px;
     }
   }
+
+  .card--paragraph {
+    &::first-letter {
+      -webkit-initial-letter: 1;
+      initial-letter: 1;
+      color: $secondary;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  }
 }
