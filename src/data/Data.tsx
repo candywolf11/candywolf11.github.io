@@ -23,14 +23,16 @@ export const cards: CardProps[] = [
     title: 'Relaxációs Masszázs',
     image: '/massage/massage-relax.jpg',
     paragraphs: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "A masszázs ezen formája oldja a stresszt, nyugtatja az idegrendszert, felfrissíti az izmokat, bőrt, a vérkeringést, elősegíti a jó közérzet kialakulását és a nyugodt alvást. Feloldja az izomfeszülést, megnyugtat, és segít helyreállítani a vérnyomást, felfrissíti a vérkeringést. Laza, pihentető fogásokkal, olajjal végzett masszázs."
     ],
   },
   {
     title: 'Talpmasszázs',
     image: '/massage/massage-talp.jpg',
     paragraphs: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+     "Talpmasszázzsal rengeteg betegséget lehet kezelni, ugyanis a talp idegellátása rendkívül gazdag, több mint hetven ezer idegvégződés található rajta. Ezért alkalmas arra, hogy rajta keresztül a szervezet egészét kezeljük.",
+     "A talpmasszázs szabályozza a hormontermelő mirigyek működését és csökkenti az esetleges fájdalmakat. Pozitívan hat szív- és keringési panaszoknál is, kedvezően befolyásolja a légzőszervi (asztma, allergia), a hólyag-, a vesepanaszokat, az emésztési zavarokat, és a reumát is. Serkenti a vér- és nyirokkeringést, ezáltal elősegíti a lerakódott salakanyagok távozását, és erősíti az immunrendszert.",
+     "A reflexzónás talpmasszázs célja a test öngyógyító képességének aktivizálása, mely során a test harmóniába kerül és felerősödik az immunrendszer, fokozódik a méreganyagok ürülése a szervezetből, valamint a talp masszírozása eredményesen befolyásolhatja a legtöbb belső szervünk működését."
     ],
   },
 ];
