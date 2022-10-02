@@ -23,7 +23,8 @@ export const cards: CardProps[] = [
     title: 'Relaxációs Masszázs',
     image: '/massage/massage-relax.jpg',
     paragraphs: [
-      "A masszázs ezen formája oldja a stresszt, nyugtatja az idegrendszert, felfrissíti az izmokat, bőrt, a vérkeringést, elősegíti a jó közérzet kialakulását és a nyugodt alvást. Feloldja az izomfeszülést, megnyugtat, és segít helyreállítani a vérnyomást, felfrissíti a vérkeringést. Laza, pihentető fogásokkal, olajjal végzett masszázs."
+      "A masszázs ezen formája oldja a stresszt, nyugtatja az idegrendszert, felfrissíti az izmokat, bőrt, a vérkeringést, elősegíti a jó közérzet kialakulását és a nyugodt alvást. Feloldja az izomfeszülést, megnyugtat, és segít helyreállítani a vérnyomást, felfrissíti a vérkeringést. Laza, pihentető fogásokkal, olajjal végzett masszázs.",
+      "Az aromaterápiás olajokkal  történő relaxációs masszázs, a frissítő masszázs és az illóolajok jótékony hatását ötvözi. Ez a masszázstípus amely a természetes gyógymódok közé tartozik, és magában foglalja a gyógynövények és a masszázskezelés előnyeit. Masszázs során az olajok felszívódnak a bőrön keresztül, átjutva a bőr felhámján és bekerülnek a vérkeringésbe, ami által kapcsolatba kerülnek a szervezettel. Az egész szervezetre serkentőleg hat, illetve vizelethajtó, gombaölő, baktériumölő, gyulladás csökkentő hatással is. A bőrt belülről táplálják, regenerálják."
     ],
   },
   {

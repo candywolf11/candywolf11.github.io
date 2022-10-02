@@ -20,10 +20,6 @@
       overflow: hidden;
       position: relative;
       width: 100px;
-
-      .card--image {
-        opacity: 0.6;
-      }
     }
 
     .card--title {
@@ -32,6 +28,8 @@
   }
 
   .card--paragraph {
+    margin-top: 10px;
+
     &::first-letter {
       -webkit-initial-letter: 1;
       initial-letter: 1;
