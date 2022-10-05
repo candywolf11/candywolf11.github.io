@@ -10,7 +10,7 @@ export const App = () => {
   };
 
   return (
-    <div className="max-w-7xl p-8 mx-o my-auto mx-auto">
+    <div className="max-w-7xl p-8 m-auto">
       <Header {...headerProps} />
       <Content {...mainProps} />
       <Footer />
