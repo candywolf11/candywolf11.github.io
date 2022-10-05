@@ -1,10 +1,10 @@
 import { cards, headerProps, mainTitle } from './data/Data';
+import { Content, ContentProps } from './layout/Content';
 import { Footer } from './layout/Footer';
 import { Header } from './layout/Header';
-import { Main, MainProps } from './layout/Main';
 
 export const App = () => {
-  const mainProps: MainProps = {
+  const mainProps: ContentProps = {
     cards,
     mainTitle,
   };
@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <div className="max-w-7xl p-8 mx-o my-auto mx-auto">
       <Header {...headerProps} />
-      <Main {...mainProps} />
+      <Content {...mainProps} />
       <Footer />
     </div>
   );
