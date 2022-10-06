@@ -19,7 +19,7 @@ export const Content = ({ cards: cardList, mainTitle }: ContentProps) => {
           ></img>
         </div>
 
-        <div className="mt-10 flex flex-col gap-5">{cards}</div>
+        <div className="mt-10 grid lg:grid-cols-3 gap-5">{cards}</div>
       </main>
   );
 };
