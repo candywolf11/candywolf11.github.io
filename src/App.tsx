@@ -10,7 +10,7 @@ export const App = () => {
   };
 
   return (
-    <div className="max-w-7xl p-8 m-auto">
+    <div className="m-auto max-w-7xl bg-gradient-to-br from-purple-300 via-purple-200 to-purple-100 p-8 text-neutral-700 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-700 dark:text-neutral-300">
       <Header {...headerProps} />
       <Content {...mainProps} />
       <Footer />
