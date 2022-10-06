@@ -1,6 +1,6 @@
 
 export const Footer = () => (
-  <footer className="mt-10 flex flex-col font-medium">
+  <footer className="font-serif mt-10 flex flex-col">
     <div className="flex gap-5">
       <div className="footer--social text-purple-500 dark:text-purple-300">
         <a href="https://www.facebook.com/relaxtimeszeged" target="_blank" className='hover:opacity-50'>
@@ -8,7 +8,7 @@ export const Footer = () => (
         </a>
       </div>
 
-      <div className="flex flex-col gap-5 text-purple-500 dark:text-purple-300">
+      <div className="flex flex-col gap-5 text-purple-500 dark:text-purple-300  font-medium">
         <div className="flex items-center">
           <i className="fa-solid fa-mobile fa-xl"></i>
           <h3 className="ml-5">+36 30 769 5108</h3>

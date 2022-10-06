@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
+      serif: ['"Baloo Paaji 2"', ...defaultTheme.fontFamily.serif],
+    },
     extend: {
-      fontFamily: {
-        sans: 'Inter, Avenir, Helvetica, Arial, sans-serif',
-      },
       colors: {
-        brand: 'rgb(var(--color-brand) / <alpha-value>)'
-      }
+        brand: 'rgb(var(--color-brand) / <alpha-value>)',
+      },
     },
   },
   plugins: [],

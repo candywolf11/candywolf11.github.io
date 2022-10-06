@@ -9,7 +9,7 @@ export const Content = ({ cards: cardList, mainTitle }: ContentProps) => {
   const cards = cardList.map((card, index) => <Card {...card} key={index} />);
   return (
       <main className="mt-10">
-        <h1 className="text-bold text-center text-6xl">{mainTitle}</h1>
+        <h1 className="font-serif text-bold text-center text-6xl">{mainTitle}</h1>
 
         <div className="mt-10 flex flex-row sm:justify-around">
           <img
