@@ -2,7 +2,7 @@ import { CardProps } from '../components/Card';
 import { HeaderProps } from '../layout/Header';
 
 export const headerProps: HeaderProps = {
-  title: 'Relax Time',
+  title: 'Candywolf',
   subtitle: 'Szépség és egészség',
 };
 
