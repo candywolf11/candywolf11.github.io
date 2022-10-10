@@ -1,11 +1,12 @@
 import { Card, CardProps } from '../components/Card';
 
-export interface ContentProps {
+export interface MassagePageProps {
   mainTitle: string;
+  mainImage: string;
   cards: CardProps[];
 }
 
-export const Content = ({ cards: cardList, mainTitle }: ContentProps) => {
+export const MassagePage = ({ cards: cardList, mainTitle }: MassagePageProps) => {
   const cards = cardList.map((card, index) => <Card {...card} key={index} />);
   return (
       <main className="mt-10">
