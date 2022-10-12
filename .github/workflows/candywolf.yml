@@ -3,11 +3,13 @@
 
 # Courtesy: https://blog.codedbyjordan.com/deploying-a-vite-app-with-github-actions
 
-name: Node.js CI
+name: Candywolf CI
 
 on:
-  - push
-  - pull_request
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   cache-and-install:
@@ -43,7 +45,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Building
         run: pnpm build --if-present
