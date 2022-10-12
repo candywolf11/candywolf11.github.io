@@ -45,10 +45,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Building
-        run: pnpm build --if-present
+        run: pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
