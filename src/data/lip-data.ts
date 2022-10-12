@@ -23,8 +23,8 @@ export const lipPageData: LipPageData = {
       ],
     },
     {
-      title: 'Ajaktöltés',
-      image: '/lip/lip-small.jpg',
+      title: 'Kezlelés',
+      image: '/lip/syringe.jpg',
       paragraphs: [
         // 'Az ajaktöltés célja az ajkak teltebbé, feszesebbé tétele és a szebb forma és kontúr elérése a természetes hatás megőrzése mellett. Minden nő álma, hogy telt és ápolt ajkakkal rendelkezzen.',
         // 'Az esztétikai bőrgyógyászatban manapság alkalmazott modern hyaluronsavas töltőanyagok, baktériumok által biológiai fermentációval előállított, különféle keresztkötéseket tartalmazó, nagy tisztaságú, különböző sűrűségű, „keménységű”, steril fecskendőbe töltött készítmények. Mivel nem állati eredetűek, allergiás reakcióra nem kell számítani. Az úgynevezett dermális töltőanyagok használatával nem csak az ajkak volumene, hanem a formája is alakítható. Az ajkak végleges, kívánt formáját nem feltétlen azonnal érjük el, hanem fokozatosan – a páciens igényeinek megfelelően növelve a hatóanyagot.',
