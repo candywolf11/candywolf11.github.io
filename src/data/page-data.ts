@@ -10,6 +10,11 @@ export const pageData: PageData = {
   headerProps: {
     title: 'Candywolf',
     subtitle: 'Szépség és egészség',
+    navigation: [
+      { path: '/', label: 'Főoldal' },
+      { path: '/massage', label: 'Masszázs' },
+      { path: '/lip', label: 'Ajaktöltés' },
+    ],
   },
   footerProps: {
     social: {

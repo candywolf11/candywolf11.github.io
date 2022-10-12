@@ -1,23 +1,14 @@
-export interface CardProps {
+export interface LipCardProps {
   image: string;
   title: string;
   paragraphs: string[];
-  price: number;
-  durationMin: number;
-  details?: {
-    description: string;
-    price: number;
-    durationMin: number;
-  }[];
 }
 
-export const Card = ({
+export const LipCard = ({
   image,
   title,
-  price,
-  durationMin,
   paragraphs: paragraphList,
-}: CardProps) => {
+}: LipCardProps) => {
   const paragraphs = paragraphList.map((paragraph, index) => (
     <p
       className="mt-2 font-serif first-letter:mr-2 first-letter:text-xl first-letter:font-bold first-letter:text-purple-500 dark:first-letter:text-purple-300"
@@ -38,20 +29,6 @@ export const Card = ({
 
       <div className="flex-grow p-5">
         <div>{paragraphs}</div>
-      </div>
-
-      <div className="flex items-center justify-end gap-5 px-5 pb-5 font-serif text-xl">
-        <p className="flex items-center gap-1">
-          <span className="flex items-center gap-2 font-medium text-purple-500 dark:text-purple-300">
-            <i className="fa-solid fa-sack-dollar fa-sm"></i>
-            <span>{price.toLocaleString()}</span>
-          </span>
-          <span> HUF</span>
-        </p>
-        <p className="flex items-center gap-2">
-          <i className="fa-solid fa-hourglass fa-sm"></i>
-          <span>{durationMin} perc</span>
-        </p>
       </div>
     </div>
   );

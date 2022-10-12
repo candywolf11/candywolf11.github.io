@@ -1,8 +1,14 @@
-import { MassagePageProps } from "../pages/MassagePage";
+import { MassageCardProps } from '../components/MassageCard';
 
-export const massagePageData: MassagePageProps = {
-  mainTitle: 'Masszázs és Ajaktöltés',
-  mainImage: 'Masszázs és Ajaktöltés',
+export interface MassagePageData {
+  mainTitle: string;
+  mainImage: string;
+  cards: MassageCardProps[];
+}
+
+export const massagePageData: MassagePageData = {
+  mainTitle: 'Masszázs',
+  mainImage: '/massage/massage.jpg',
   cards: [
     {
       title: 'Svédmasszázs',

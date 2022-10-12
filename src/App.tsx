@@ -1,16 +1,15 @@
-import { massagePageData, pageData } from './data';
+import { Outlet } from 'react-router-dom';
+import { pageData } from './data';
 import { Footer } from './layout/Footer';
 import { Header } from './layout/Header';
-import { MassagePage } from './pages/MassagePage';
 
 export const App = () => {
   const { headerProps, footerProps } = pageData;
-  const massagePageProps = massagePageData;
 
   return (
     <div className="m-auto max-w-7xl bg-gradient-to-br from-purple-300 via-purple-200 to-purple-100 p-8 text-neutral-700 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-700 dark:text-neutral-300">
       <Header {...headerProps} />
-      <MassagePage {...massagePageProps} />
+      <Outlet />
       <Footer {...footerProps} />
     </div>
   );

@@ -1,26 +1,25 @@
-import { Card, CardProps } from '../components/Card';
+import { MassageCard } from '../components/MassageCard';
+import { massagePageData } from '../data';
 
-export interface MassagePageProps {
-  mainTitle: string;
-  mainImage: string;
-  cards: CardProps[];
-}
+export const MassagePage = () => {
+  const { cards: cardList, mainTitle, mainImage } = massagePageData;
 
-export const MassagePage = ({ cards: cardList, mainTitle }: MassagePageProps) => {
-  const cards = cardList.map((card, index) => <Card {...card} key={index} />);
+  const cards = cardList.map((card, index) => (
+    <MassageCard {...card} key={index} />
+  ));
   return (
-      <main className="mt-10">
-        <h1 className="font-serif text-bold text-center text-6xl">{mainTitle}</h1>
+    <main className="mt-10">
+      <h1 className="font-serif text-bold text-center text-6xl">{mainTitle}</h1>
 
-        <div className="mt-10 flex flex-row sm:justify-around">
-          <img
-            src="/massage/massage.jpg"
-            alt="Massage image"
-            className="h-1/2 sm:w-1/2 rounded-full"
-          ></img>
-        </div>
+      <div className="mt-10 flex flex-row justify-center sm:justify-around">
+        <img
+          src={mainImage}
+          alt="Massage image"
+          className="h-[160px] sm:h-1/2 sm:w-1/2 rounded-full"
+        ></img>
+      </div>
 
-        <div className="mt-10 grid lg:grid-cols-3 gap-5">{cards}</div>
-      </main>
+      <div className="mt-10 grid lg:grid-cols-3 gap-5">{cards}</div>
+    </main>
   );
 };
