@@ -10,7 +10,7 @@ export interface FooterProps {
 }
 
 export const Footer = ({ social, contact, rights }: FooterProps) => (
-  <footer className="mt-10 flex flex-col font-serif">
+  <footer className="flex flex-col font-serif gap-10">
     <div className="flex gap-5">
       <div className="footer--socia">
         <a
@@ -34,7 +34,7 @@ export const Footer = ({ social, contact, rights }: FooterProps) => (
       </div>
     </div>
 
-    <div className="mt-10 text-neutral-500">
+    <div className="text-neutral-500">
       <p>{rights}</p>
     </div>
   </footer>

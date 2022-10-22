@@ -6,10 +6,10 @@ export const LipPage = () => {
 
   const cards = cardList.map((card, index) => <LipCard {...card} key={index} />);
   return (
-      <main className="mt-10">
+      <main className="flex flex-col gap-10">
         <h1 className="font-serif text-bold text-center text-6xl">{mainTitle}</h1>
 
-        <div className="mt-10 flex flex-row justify-center sm:justify-around">
+        <div className="flex flex-row justify-center sm:justify-around">
           <img
             src={mainImage}
             alt="Lip image"
@@ -17,7 +17,7 @@ export const LipPage = () => {
           ></img>
         </div>
 
-        <div className="mt-10 grid lg:grid-cols-2 gap-5">{cards}</div>
+        <div className="grid lg:grid-cols-2 gap-5">{cards}</div>
       </main>
   );
 };
