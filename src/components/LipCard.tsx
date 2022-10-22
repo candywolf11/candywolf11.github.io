@@ -11,7 +11,7 @@ export const LipCard = ({
 }: LipCardProps) => {
   const paragraphs = paragraphList.map((paragraph, index) => (
     <p
-      className="mt-2 font-serif first-letter:mr-2 first-letter:text-xl first-letter:font-bold"
+      className="mt-2 font-serif first-letter:text-xl first-letter:font-bold"
       key={index}
     >
       {paragraph}
