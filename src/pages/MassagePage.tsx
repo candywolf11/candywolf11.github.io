@@ -4,8 +4,8 @@ import { massagePageData } from '../data';
 export const MassagePage = () => {
   const { cards: cardList, mainTitle, mainImage } = massagePageData;
 
-  const cards = cardList.map((card, index) => (
-    <MassageCard {...card} key={index} />
+  const cards = cardList.map((card) => (
+    <MassageCard {...card} key={card.title} />
   ));
   return (
     <main className="flex flex-col gap-10">

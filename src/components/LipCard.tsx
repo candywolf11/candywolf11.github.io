@@ -9,10 +9,10 @@ export const LipCard = ({
   title,
   paragraphs: paragraphList,
 }: LipCardProps) => {
-  const paragraphs = paragraphList.map((paragraph, index) => (
+  const paragraphs = paragraphList.map((paragraph) => (
     <p
       className="mt-2 font-serif first-letter:text-xl first-letter:font-bold"
-      key={index}
+      key={paragraph}
     >
       {paragraph}
     </p>

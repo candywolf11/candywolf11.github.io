@@ -4,7 +4,7 @@ import { lipPageData } from "../data";
 export const LipPage = () => {
   const { cards: cardList, mainTitle, mainImage } = lipPageData;
 
-  const cards = cardList.map((card, index) => <LipCard {...card} key={index} />);
+  const cards = cardList.map((card) => <LipCard {...card} key={card.title} />);
   return (
       <main className="flex flex-col gap-10">
         <h1 className="font-serif text-bold text-center text-6xl">{mainTitle}</h1>
