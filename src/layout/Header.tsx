@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { NavLink } from "react-router-dom";
 export interface HeaderProps {
   title: string;
   subtitle: string;
@@ -9,15 +9,20 @@ export interface HeaderProps {
 export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const navList = navigation.map(({ path, label }) => (
-    <li>
-      <a
-        href={path}
-        className="hover:text-purple-500 dark:hover:text-purple-300"
-      >
-        {label}
-      </a>
-    </li>
+  const navList = navigation.map(({ path, label }) =>
+  (<li key={path} className="hover:scale-110 duration-300">
+    <NavLink
+      to={path}
+      end
+      onClick={() => setIsNavOpen(false)}
+      className={({ isActive }) => {
+        let defaultClassNames = "hover:text-purple-500 dark:hover:text-purple-300";
+        return isActive ? `${defaultClassNames} text-purple-500 dark:text-purple-300` : defaultClassNames;
+      }}
+    >
+      {label}
+    </NavLink>
+  </li>
   ));
 
   return (

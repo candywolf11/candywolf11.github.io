@@ -12,7 +12,7 @@ export interface FooterProps {
 export const Footer = ({ social, contact, rights }: FooterProps) => (
   <footer className="flex flex-col font-serif gap-10">
     <div className="flex gap-5">
-      <div className="footer--socia">
+      <div className="hover:scale-110 duration-300">
         <a
           href={social.facebookLink}
           target="_blank"
