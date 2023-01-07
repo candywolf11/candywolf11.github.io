@@ -16,7 +16,7 @@ export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
       end
       onClick={() => setIsNavOpen(false)}
       className={({ isActive }) => {
-        let defaultClassNames = "hover:text-purple-500 dark:hover:text-purple-300";
+        const defaultClassNames = "hover:text-purple-500 dark:hover:text-purple-300";
         return isActive ? `${defaultClassNames} text-purple-500 dark:text-purple-300` : defaultClassNames;
       }}
     >

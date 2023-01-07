@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
-import { App } from './App';
-import './index.scss';
-import { HomePage } from './pages/HomePage';
-import { LipPage } from './pages/LipPage';
-import { MassagePage } from './pages/MassagePage';
+import { App } from './app/app';
+import { HomePage } from './app/pages/HomePage';
+import { LipPage } from './app/pages/LipPage';
+import { MassagePage } from './app/pages/MassagePage';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +31,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+
+root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

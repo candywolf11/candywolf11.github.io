@@ -8,7 +8,7 @@ export const HomePage = () => {
       <div className="mt-10 flex justify-around rounded">
         <img
           src={profileImage}
-          alt="Profile Image"
+          alt="Profile"
           className="rounded-full sm:w-1/2 sm:h-1/2 md:w-1/4 md:h-1/4"
         />
       </div>

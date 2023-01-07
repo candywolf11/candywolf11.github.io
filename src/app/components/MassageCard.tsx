@@ -57,7 +57,7 @@ export const MassageCard = ({
   return (
     <div onMouseLeave={hidePrices} className="relative group overflow-hidden flex flex-col rounded-3xl bg-purple-100/30 hover:bg-purple-100/50 shadow-lg shadow-purple-500/30 dark:bg-neutral-700/30 hover:dark:bg-neutral-700/50 dark:shadow-neutral-800/30 hover:shadow-xl hover:shadow-purple-500/30 hover:dark:shadow-neutral-800/30 cursor-default">
       <div className="flex items-center p-5">
-        <img src={image} alt="image" className="h-24 w-24 rounded-3xl" />
+        <img src={image} alt={title + ' Massage'} className="h-24 w-24 rounded-3xl" />
         <h3 className="pl-5 font-serif text-xl font-medium text-purple-500 dark:text-purple-300">
           {title}
         </h3>

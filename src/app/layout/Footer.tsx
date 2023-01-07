@@ -16,6 +16,7 @@ export const Footer = ({ social, contact, rights }: FooterProps) => (
         <a
           href={social.facebookLink}
           target="_blank"
+          rel="noreferrer"
           className="hover:text-purple-500  dark:hover:text-purple-300"
         >
           <i className="fa-brands fa-square-facebook fa-4x"></i>

@@ -14,7 +14,7 @@ export const MassagePage = () => {
       <div className="flex flex-row justify-center sm:justify-around">
         <img
           src={mainImage}
-          alt="Massage image"
+          alt="Massage"
           className="h-[160px] sm:h-1/2 sm:w-1/2 rounded-full"
         ></img>
       </div>

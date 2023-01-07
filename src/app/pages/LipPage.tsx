@@ -12,7 +12,7 @@ export const LipPage = () => {
         <div className="flex flex-row justify-center sm:justify-around">
           <img
             src={mainImage}
-            alt="Lip image"
+            alt="Lip"
             className="h-[160px] sm:h-[300px] sm:w-1/2 rounded-full"
           ></img>
         </div>
