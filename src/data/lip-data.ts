@@ -23,7 +23,7 @@ export const lipPageData: LipPageData = {
       ],
     },
     {
-      title: 'Kezlelés',
+      title: 'Kezelés',
       image: '/lip/syringe.jpg',
       paragraphs: [
         // 'Az ajaktöltés célja az ajkak teltebbé, feszesebbé tétele és a szebb forma és kontúr elérése a természetes hatás megőrzése mellett. Minden nő álma, hogy telt és ápolt ajkakkal rendelkezzen.',
