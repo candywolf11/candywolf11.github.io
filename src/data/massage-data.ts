@@ -19,9 +19,10 @@ export const massagePageData: MassagePageData = {
         'A rendszeres masszázs jóval több, mint  luxus. Inkább egy befektetés az egészségbe.',
         'A svédmasszázs egyszerre pihentető és frissítő hatású. Az egymásra épülő és eltérő erősségű tradicionális fogások fokozzák a test aktivitását. Hatására egy új életérzés költözik a testbe.',
       ],
-      price: 7500,
-      durationMin: 60,
-      details: [{ description: 'Hátmasszázs', price: 4500, durationMin: 30 }],
+      prices: [
+        { description: 'Svédmasszázs', price: 7500, durationMin: 60 },
+        { description: 'Hátmasszázs', price: 4500, durationMin: 30 },
+      ],
     },
     {
       title: 'Relaxációs Masszázs',
@@ -30,9 +31,8 @@ export const massagePageData: MassagePageData = {
         'A masszázs ezen formája oldja a stresszt, nyugtatja az idegrendszert, felfrissíti az izmokat, bőrt, a vérkeringést, elősegíti a jó közérzet kialakulását és a nyugodt alvást. Feloldja az izomfeszülést, megnyugtat, és segít helyreállítani a vérnyomást, felfrissíti a vérkeringést. Laza, pihentető fogásokkal, olajjal végzett masszázs.',
         'Az aromaterápiás olajokkal  történő relaxációs masszázs, a frissítő masszázs és az illóolajok jótékony hatását ötvözi. Ez a masszázstípus amely a természetes gyógymódok közé tartozik, és magában foglalja a gyógynövények és a masszázskezelés előnyeit. Masszázs során az olajok felszívódnak a bőrön keresztül, átjutva a bőr felhámján és bekerülnek a vérkeringésbe, ami által kapcsolatba kerülnek a szervezettel. Az egész szervezetre serkentőleg hat, illetve vizelethajtó, gombaölő, baktériumölő, gyulladás csökkentő hatással is. A bőrt belülről táplálják, regenerálják.',
       ],
-      price: 7500,
-      durationMin: 60,
-      details: [
+      prices: [
+        { description: 'Relaxációs Masszázs', price: 7500, durationMin: 60 },
         {
           description: 'Meleg olajos masszázs',
           price: 10000,
@@ -50,8 +50,7 @@ export const massagePageData: MassagePageData = {
         'A talpmasszázs szabályozza a hormontermelő mirigyek működését és csökkenti az esetleges fájdalmakat. Pozitívan hat szív- és keringési panaszoknál is, kedvezően befolyásolja a légzőszervi (asztma, allergia), a hólyag-, a vesepanaszokat, az emésztési zavarokat, és a reumát is. Serkenti a vér- és nyirokkeringést, ezáltal elősegíti a lerakódott salakanyagok távozását, és erősíti az immunrendszert.',
         'A reflexzónás talpmasszázs célja a test öngyógyító képességének aktivizálása, mely során a test harmóniába kerül és felerősödik az immunrendszer, fokozódik a méreganyagok ürülése a szervezetből, valamint a talp masszírozása eredményesen befolyásolhatja a legtöbb belső szervünk működését.',
       ],
-      price: 4000,
-      durationMin: 30,
+      prices: [{ description: 'Talpmasszázs', price: 4000, durationMin: 30 }],
     },
   ],
 };
