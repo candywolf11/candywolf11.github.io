@@ -35,7 +35,7 @@ export const massagePageData: MassagePageData = {
         { description: 'Relaxációs Masszázs', price: 8000, durationMin: 60 },
         {
           description: 'Meleg olajos masszázs',
-          price: 10000,
+          price: 10500,
           durationMin: 60,
         },
         { description: 'Aromaolajos Masszázs', price: 8500, durationMin: 60 },
