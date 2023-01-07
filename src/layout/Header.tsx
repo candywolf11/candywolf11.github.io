@@ -38,7 +38,7 @@ export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 cursor-pointer"
             onClick={() => setIsNavOpen(prev => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-purple-500 dark:bg-purple-300"></span>
@@ -57,7 +57,7 @@ export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
               className="absolute top-0 right-0 p-8"
               onClick={() => setIsNavOpen(false)}
             >
-              <i className="fa-solid fa-close fa-2x"></i>
+              <i className="fa-solid fa-close fa-2x cursor-pointer"></i>
             </div>
             <ul className="text-lg font-medium flex justify-evenly h-full flex-col items-center content-center uppercase">
               {navList}
