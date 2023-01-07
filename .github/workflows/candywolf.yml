@@ -47,6 +47,12 @@ jobs:
       - name: Installing
         run: pnpm install
 
+      - name: Linting
+        run: pnpm lint
+
+      - name: Testing
+        run: pnpm test
+
       - name: Building
         run: pnpm build
 
