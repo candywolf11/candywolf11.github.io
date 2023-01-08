@@ -21,3 +21,5 @@ export const LipPage = () => {
       </main>
   );
 };
+
+export default LipPage;

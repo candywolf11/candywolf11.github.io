@@ -23,3 +23,5 @@ export const MassagePage = () => {
     </main>
   );
 };
+
+export default MassagePage;
