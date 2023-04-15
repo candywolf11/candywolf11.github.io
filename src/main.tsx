@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, StrictMode, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { App } from './app/app';
@@ -41,9 +41,9 @@ const Loading = <div className="flex justify-center items-center">
 </div>;
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <Suspense fallback={Loading}>
       <RouterProvider router={router} />
     </Suspense>
-  </React.StrictMode>
+  </StrictMode>
 );

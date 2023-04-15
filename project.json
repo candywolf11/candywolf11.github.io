@@ -37,6 +37,21 @@
         }
       }
     },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "candywolf:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "candywolf:build:development"
+        },
+        "production": {
+          "buildTarget": "candywolf:build:production"
+        }
+      }
+    },
     "test": {
       "executor": "@nrwl/vite:test",
       "outputs": ["coverage/candywolf"],
@@ -50,6 +65,12 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "candywolf:build"
       }
     }
   },
