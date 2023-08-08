@@ -4,7 +4,7 @@
   "overrides": [
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
+      "extends": ["plugin:@nx/javascript"],
       "rules": {}
     },
     {
@@ -12,5 +12,5 @@
       "rules": {}
     }
   ],
-  "plugins": ["@nrwl/nx"]
+  "plugins": ["@nx"]
 }
