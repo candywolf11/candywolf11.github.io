@@ -1,3 +1,40 @@
 {
-    "typescript.tsdk": "node_modules/typescript/lib"
+  // Files
+  "files.exclude": {
+    ".git": true,
+    ".DS_Store": true,
+    ".history": true
+  },
+
+  // Search
+  "search.exclude": {
+    ".vscode": true,
+    ".history": true,
+    "dist": true,
+    "build": true,
+    "node_modules": true,
+    "*lock.*": true,
+    "*.svg": true
+  },
+  // Typescript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Editor
+  "window.title": "${rootName}${separator}${activeEditorLong} ${dirty}",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.foldingImportsByDefault": true,
+  // TailwindCSS
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "tailwindCSS.emmetCompletions": true
 }
