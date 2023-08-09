@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 export interface HeaderProps {
   title: string;
   subtitle: string;
@@ -9,20 +9,23 @@ export interface HeaderProps {
 export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const navList = navigation.map(({ path, label }) =>
-  (<li key={path} className="hover:scale-110 duration-300">
-    <NavLink
-      to={path}
-      end
-      onClick={() => setIsNavOpen(false)}
-      className={({ isActive }) => {
-        const defaultClassNames = "hover:text-purple-500 dark:hover:text-purple-300";
-        return isActive ? `${defaultClassNames} text-purple-500 dark:text-purple-300` : defaultClassNames;
-      }}
-    >
-      {label}
-    </NavLink>
-  </li>
+  const navList = navigation.map(({ path, label }) => (
+    <li key={path} className="duration-300 hover:scale-110">
+      <NavLink
+        to={path}
+        end
+        onClick={() => setIsNavOpen(false)}
+        className={({ isActive }) => {
+          const defaultClassNames =
+            'hover:text-purple-500 dark:hover:text-purple-300';
+          return isActive
+            ? `${defaultClassNames} text-purple-500 dark:text-purple-300`
+            : defaultClassNames;
+        }}
+      >
+        {label}
+      </NavLink>
+    </li>
   ));
 
   return (
@@ -38,7 +41,7 @@ export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2 cursor-pointer"
+            className="HAMBURGER-ICON cursor-pointer space-y-2"
             onClick={() => setIsNavOpen(prev => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-purple-500 dark:bg-purple-300"></span>
@@ -49,23 +52,23 @@ export const Header = ({ title, subtitle, navigation }: HeaderProps) => {
           <div
             className={
               isNavOpen
-                ? 'absolute top-0 left-0 z-10 flex h-full w-full flex-col content-evenly items-center backdrop-blur-xl bg-neutral-500/30 dark:bg-neutral-800/30'
+                ? 'absolute left-0 top-0 z-10 flex h-full w-full flex-col content-evenly items-center bg-neutral-500/30 backdrop-blur-xl dark:bg-neutral-800/30'
                 : 'hidden'
             }
           >
             <div
-              className="absolute top-0 right-0 p-8"
+              className="absolute right-0 top-0 p-8"
               onClick={() => setIsNavOpen(false)}
             >
               <i className="fa-solid fa-close fa-2x cursor-pointer"></i>
             </div>
-            <ul className="text-lg font-medium flex justify-evenly h-full flex-col items-center content-center uppercase">
+            <ul className="flex h-full flex-col content-center items-center justify-evenly text-lg font-medium uppercase">
               {navList}
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU text-lg font-medium hidden space-x-8 lg:flex uppercase">
+        <ul className="DESKTOP-MENU hidden space-x-8 text-lg font-medium uppercase lg:flex">
           {navList}
         </ul>
       </nav>

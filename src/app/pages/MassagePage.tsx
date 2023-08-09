@@ -4,7 +4,7 @@ import { massagePageData } from '../data';
 export const MassagePage = () => {
   const { cards: cardList, mainTitle, mainImage } = massagePageData;
 
-  const cards = cardList.map((card) => (
+  const cards = cardList.map(card => (
     <MassageCard {...card} key={card.title} />
   ));
   return (
@@ -15,11 +15,11 @@ export const MassagePage = () => {
         <img
           src={mainImage}
           alt="Massage"
-          className="h-[160px] sm:h-1/2 sm:w-1/2 rounded-full"
+          className="h-[160px] rounded-full sm:h-1/2 sm:w-1/2"
         ></img>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-5">{cards}</div>
+      <div className="grid gap-5 lg:grid-cols-3">{cards}</div>
     </main>
   );
 };
