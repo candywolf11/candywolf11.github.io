@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   cacheDir: './node_modules/.vite/candywolf',
@@ -16,18 +16,11 @@ export default defineConfig({
     host: 'localhost',
   },
 
-  plugins: [
-    react(),
-    nxViteTsPaths(),
-  ],
+  plugins: [react(), nxViteTsPaths()],
 
   // Uncomment this if you are using workers.
   // worker: {
-  //  plugins: [
-  //    viteTsConfigPaths({
-  //      root: './',
-  //    }),
-  //  ],
+  //  plugins: [ nxViteTsPaths() ],
   // },
 
   test: {

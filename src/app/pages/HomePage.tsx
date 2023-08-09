@@ -9,7 +9,7 @@ export const HomePage = () => {
         <img
           src={profileImage}
           alt="Profile"
-          className="rounded-full sm:w-1/2 sm:h-1/2 md:w-1/4 md:h-1/4"
+          className="rounded-full sm:h-1/2 sm:w-1/2 md:h-1/4 md:w-1/4"
         />
       </div>
     </main>

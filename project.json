@@ -54,7 +54,7 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{projectRoot}/coverage/candywolf"],
+      "outputs": ["coverage/candywolf"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "coverage/candywolf"
@@ -68,7 +68,7 @@
       }
     },
     "serve-static": {
-      "executor": "@nrwl/web:file-server",
+      "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "candywolf:build"
       }

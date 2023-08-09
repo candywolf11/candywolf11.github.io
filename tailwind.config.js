@@ -7,14 +7,13 @@ module.exports = {
   content: [
     join(
       __dirname,
-      '{src,pages,components}/**/*!(*.stories|*.spec).{ts,tsx,html}'
+      '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}',
     ),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
     fontFamily: {
-      sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      serif: ['"Baloo Paaji 2"', ...defaultTheme.fontFamily.serif],
+      // sans: ['"Baloo Paaji 2"', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {
@@ -22,5 +21,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('prettier-plugin-tailwindcss'),
+    require('@tailwindcss/container-queries'),
+  ],
 };
