@@ -7,10 +7,11 @@
     "preinstall": "npx only-allow pnpm",
     "start": "nx serve",
     "build": "nx build",
-    "lint": "nx lint",
     "demo": "nx serve --configuration=production",
+    "lint": "nx lint",
+    "test": "nx test",
     "ci": "nx run-many -t lint test build",
-    "test": "nx test"
+    "format": "nx format:write --all"
   },
   "private": true,
   "dependencies": {
